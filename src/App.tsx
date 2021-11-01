@@ -5,12 +5,17 @@ const globalStyles = globalCss({
   '*, *::before, *::after': {
     boxSizing: 'border-box',
   },
+  html: {
+    scrollBehavior: 'smooth',
+    fontSize: '100%',
+  },
 
   body: {
     margin: 0,
     color: '$hiContrast',
     backgroundColor: '$loContrast',
     fontFamily: '$untitled',
+    lineHeight: '1.5',
     WebkitFontSmoothing: 'antialiased',
     MozOsxFontSmoothing: 'grayscale',
     WebkitTextSizeAdjust: '100%',
