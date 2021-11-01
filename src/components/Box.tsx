@@ -4,5 +4,5 @@ export const Box = styled('div', {
   // Reset
   boxSizing: 'border-box',
   // TEMP
-  backgroundColor: '$primary3',
+  boxShadow: 'inset 0 0 0 2px $colors$primary9',
 });

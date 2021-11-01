@@ -9,7 +9,6 @@ const globalStyles = globalCss({
     scrollBehavior: 'smooth',
     fontSize: '100%',
   },
-
   body: {
     margin: 0,
     padding: 0,
@@ -27,7 +26,7 @@ const globalStyles = globalCss({
 
 const App = () => {
   globalStyles();
-  return <div>Ocean Sloth</div>;
+  return <div></div>;
 };
 
 export default App;
