@@ -1,3 +1,11 @@
+import {
+  slate,
+  blue,
+  sky,
+  indigo,
+  whiteA,
+  blackA,
+} from '@radix-ui/colors';
 import { createStitches } from '@stitches/react';
 import type * as Stitches from '@stitches/react';
 
@@ -7,6 +15,13 @@ export const { styled, config, theme, globalCss, css } =
   createStitches({
     theme: {
       colors: {
+        ...slate,
+        ...blue,
+        ...sky,
+        ...indigo,
+        ...whiteA,
+        ...blackA,
+
         // App backgrounds and raised components
         // 1 - 2 - 3
         // normal, hover, active. Buttons are +1 to each
