@@ -44,6 +44,10 @@ export const { styled, config, theme, globalCss, css } =
         appBg2: '$base2',
         appBg3: '$base3',
 
+        shadow1: '$blackA1',
+        shadow2: '$blackA2',
+        shadow3: '$blackA3',
+
         error: '$crimson9',
         success: '$mint9',
         warning: '$yellow9',
