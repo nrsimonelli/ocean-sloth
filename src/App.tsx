@@ -12,8 +12,9 @@ const globalStyles = globalCss({
 
   body: {
     margin: 0,
+    padding: 0,
     color: '$hiContrast',
-    backgroundColor: '$loContrast',
+    backgroundColor: '$appBg1',
     fontFamily: '$untitled',
     lineHeight: '1.5',
     WebkitFontSmoothing: 'antialiased',

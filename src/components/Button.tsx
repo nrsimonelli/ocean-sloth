@@ -39,9 +39,6 @@ export const Button = styled('button', {
     size: {},
     type: {},
     color: {},
-    gradient: {
-      true: {},
-    },
   },
   // compoundVariants: [{}],
   defaultVariants: {},
