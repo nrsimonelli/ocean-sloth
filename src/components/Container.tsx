@@ -5,6 +5,7 @@ export const Container = styled('div', {
   boxSizing: 'border-box',
   flexShrink: 0,
   mx: 'auto',
+  width: '$full',
 
   // TEMP
   backgroundColor: '$secondary5',
@@ -16,8 +17,8 @@ export const Container = styled('div', {
       3: { maxWidth: '$bp3' },
       4: { maxWidth: '$bp4' },
       5: { maxWidth: '$bp5' },
-      6: { maxWidth: 'none' },
-      7: {
+      none: { maxWidth: 'none' },
+      responsive: {
         '@bp1': {
           maxWidth: '$bp1',
         },
@@ -47,6 +48,6 @@ export const Container = styled('div', {
     },
   },
   defaultVariants: {
-    type: '6',
+    type: 'none',
   },
 });
