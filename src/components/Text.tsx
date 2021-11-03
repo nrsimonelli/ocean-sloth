@@ -97,3 +97,7 @@ export const Text = styled('span', {
     color: 'contrast',
   },
 });
+
+export const HeadingText = styled(Text, {
+  color: '$primary9',
+});

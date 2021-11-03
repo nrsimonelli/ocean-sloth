@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container } from './components/Container';
 import { Flex } from './components/Flex';
-import { Text } from './components/Text';
+import { Text, HeadingText } from './components/Text';
 import { globalCss } from './stitches.config';
 
 const globalStyles = globalCss({
@@ -19,7 +19,6 @@ const globalStyles = globalCss({
     backgroundColor: '$appBg1',
     fontFamily: '$untitled',
     lineHeight: '1.5',
-    minHeight: '$vh',
     WebkitTextSizeAdjust: '100%',
   },
 
@@ -30,8 +29,14 @@ const App = () => {
   globalStyles();
   return (
     <Flex direction='column' css={{ minHeight: '$vh' }}>
-      <Container border type='responsive'>
-        Ocean Sloth
+      <Flex direction='row' css={{ height: '$10' }}>
+        <Container type='responsive'>
+          <Text>untitled</Text>
+        </Container>
+      </Flex>
+      <Container type='responsive' css={{ flexGrow: 1 }}>
+        <HeadingText>Heading</HeadingText>
+        <Text>Ocean sloth</Text>
       </Container>
     </Flex>
   );
