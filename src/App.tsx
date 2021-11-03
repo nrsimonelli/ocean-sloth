@@ -2,6 +2,7 @@ import React from 'react';
 import { Container } from './components/Container';
 import { Flex } from './components/Flex';
 import { Text, HeadingText } from './components/Text';
+import SingleColumn from './pages/SingleColumn';
 import { globalCss } from './stitches.config';
 
 const globalStyles = globalCss({
@@ -29,15 +30,7 @@ const App = () => {
   globalStyles();
   return (
     <Flex direction='column' css={{ minHeight: '$vh' }}>
-      <Flex direction='row' css={{ height: '$10' }}>
-        <Container type='responsive'>
-          <Text>untitled</Text>
-        </Container>
-      </Flex>
-      <Container type='responsive' css={{ flexGrow: 1 }}>
-        <HeadingText>Heading</HeadingText>
-        <Text>Ocean sloth</Text>
-      </Container>
+      <SingleColumn />
     </Flex>
   );
 };

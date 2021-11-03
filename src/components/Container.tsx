@@ -7,9 +7,6 @@ export const Container = styled('div', {
   mx: 'auto',
   width: '$full',
 
-  // TEMP
-  backgroundColor: '$secondary5',
-
   variants: {
     type: {
       1: { maxWidth: '$bp1' },
@@ -44,6 +41,21 @@ export const Container = styled('div', {
     border: {
       true: {
         boxShadow: 'inset 0 0 0 1px $colors$secondary8',
+      },
+    },
+    // will remove later
+    color: {
+      1: {
+        backgroundColor: '$primary5',
+      },
+      2: {
+        backgroundColor: '$secondary5',
+      },
+      3: {
+        backgroundColor: '$accent5',
+      },
+      4: {
+        backgroundColor: '$base5',
       },
     },
   },

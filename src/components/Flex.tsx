@@ -4,9 +4,6 @@ export const Flex = styled('div', {
   boxSizing: 'border-box',
   display: 'flex',
 
-  // TEMP
-  backgroundColor: '$shadow3',
-
   variants: {
     direction: {
       row: {
@@ -84,6 +81,20 @@ export const Flex = styled('div', {
     border: {
       true: {
         boxShadow: 'inset 0 0 0 2px $colors$accent9',
+      },
+    },
+    color: {
+      1: {
+        backgroundColor: '$primary5',
+      },
+      2: {
+        backgroundColor: '$secondary5',
+      },
+      3: {
+        backgroundColor: '$accent5',
+      },
+      4: {
+        backgroundColor: '$base5',
       },
     },
   },
