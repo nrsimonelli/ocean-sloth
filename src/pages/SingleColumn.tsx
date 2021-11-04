@@ -11,8 +11,12 @@ const SingleColumn = () => {
           <Text></Text>
         </Container>
       </Flex>
-      <Container color='2' type='responsive' css={{ flexGrow: 1 }}>
-        <HeadingText>Heading</HeadingText>
+      <Container
+        color='2'
+        type='responsive'
+        css={{ flexGrow: 1, padding: '$2' }}
+      >
+        <HeadingText size='8'>Heading</HeadingText>
         <Text>Ocean sloth</Text>
         <Text>
           A paragraph of default text to showcase the way it will

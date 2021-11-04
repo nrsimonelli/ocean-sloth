@@ -4,7 +4,6 @@ export const Text = styled('span', {
   // Reset
   lineHeight: '1',
   margin: '0',
-  fontVariantNumeric: 'tabular-nums',
   display: 'block',
 
   variants: {
@@ -90,14 +89,71 @@ export const Text = styled('span', {
         textTransform: 'inherit',
       },
     },
+    responsive: {
+      true: {},
+    },
   },
+  compoundVariants: [
+    {
+      responsive: true,
+      size: '4',
+      css: {
+        fontSize: '$4',
+        // lineHeight: '20px',
+        '@bp2': {
+          fontSize: '$5',
+          // lineHeight: '23px',
+        },
+      },
+    },
+    {
+      responsive: true,
+      size: '6',
+      css: {
+        fontSize: '$6',
+        // lineHeight: '25px',
+        '@bp2': {
+          fontSize: '$7',
+          // lineHeight: '30px',
+        },
+      },
+    },
+    {
+      responsive: true,
+      size: '7',
+      css: {
+        fontSize: '$7',
+        // lineHeight: '33px',
+        '@bp2': {
+          fontSize: '$8',
+          // lineHeight: '41px',
+        },
+      },
+    },
+    {
+      responsive: true,
+      size: '8',
+      css: {
+        fontSize: '$8',
+        // lineHeight: '35px',
+        '@bp2': {
+          fontSize: '$9',
+          // lineHeight: '55px',
+        },
+      },
+    },
+  ],
+
   defaultVariants: {
     size: '3',
     weight: '1',
-    color: 'contrast',
   },
 });
 
 export const HeadingText = styled(Text, {
-  color: '$primary9',
+  defaultVariants: {
+    weight: '2',
+    size: '4',
+    responsive: true,
+  },
 });
