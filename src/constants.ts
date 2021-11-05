@@ -5,3 +5,5 @@ export const SCREENS = {
   4: '1280px',
   5: '1536px',
 } as const;
+
+export const NAV_HEIGHT = '80px';

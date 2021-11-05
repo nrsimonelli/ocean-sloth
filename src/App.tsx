@@ -3,6 +3,7 @@ import { Container } from './components/Container';
 import { Flex } from './components/Flex';
 import { Text, HeadingText } from './components/Text';
 import SingleColumn from './pages/SingleColumn';
+import TwoColumn from './pages/TwoColumn';
 import { globalCss } from './stitches.config';
 
 const globalStyles = globalCss({
@@ -29,8 +30,13 @@ const globalStyles = globalCss({
 const App = () => {
   globalStyles();
   return (
-    <Flex direction='column' css={{ minHeight: '$vh' }}>
-      <SingleColumn />
+    <Flex
+      direction='column'
+      wrap='wrap'
+      css={{ minHeight: '$vh', bg: '$base12', color: '$primary1' }}
+    >
+      {/* <SingleColumn /> */}
+      <TwoColumn />
     </Flex>
   );
 };

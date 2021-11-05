@@ -99,10 +99,8 @@ export const Text = styled('span', {
       size: '4',
       css: {
         fontSize: '$4',
-        // lineHeight: '20px',
         '@bp2': {
           fontSize: '$5',
-          // lineHeight: '23px',
         },
       },
     },
@@ -111,10 +109,8 @@ export const Text = styled('span', {
       size: '6',
       css: {
         fontSize: '$6',
-        // lineHeight: '25px',
         '@bp2': {
           fontSize: '$7',
-          // lineHeight: '30px',
         },
       },
     },
@@ -123,10 +119,8 @@ export const Text = styled('span', {
       size: '7',
       css: {
         fontSize: '$7',
-        // lineHeight: '33px',
         '@bp2': {
           fontSize: '$8',
-          // lineHeight: '41px',
         },
       },
     },
@@ -135,10 +129,8 @@ export const Text = styled('span', {
       size: '8',
       css: {
         fontSize: '$8',
-        // lineHeight: '35px',
         '@bp2': {
           fontSize: '$9',
-          // lineHeight: '55px',
         },
       },
     },

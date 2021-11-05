@@ -14,7 +14,7 @@ export const Container = styled('div', {
       3: { maxWidth: '$bp3' },
       4: { maxWidth: '$bp4' },
       5: { maxWidth: '$bp5' },
-      none: { maxWidth: 'none' },
+      full: { maxWidth: 'none' },
       responsive: {
         '@bp1': {
           maxWidth: '$bp1',
@@ -60,6 +60,6 @@ export const Container = styled('div', {
     },
   },
   defaultVariants: {
-    type: 'none',
+    type: 'full',
   },
 });
