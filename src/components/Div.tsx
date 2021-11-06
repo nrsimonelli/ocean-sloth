@@ -1,6 +1,6 @@
 import { styled } from '../stitches.config';
 
-export const Box = styled('div', {
+export const Div = styled('div', {
   // Reset
   boxSizing: 'border-box',
   // TEMP

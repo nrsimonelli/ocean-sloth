@@ -2,13 +2,15 @@ import React from 'react';
 import { Container } from './components/Container';
 import { Flex } from './components/Flex';
 import { Text, HeadingText } from './components/Text';
+import { GRADIENT_STRING } from './constants';
 import SingleColumn from './pages/SingleColumn';
 import TwoColumn from './pages/TwoColumn';
+import Welcome from './pages/Welcome';
 import { globalCss } from './stitches.config';
 
 const globalStyles = globalCss({
   '*, *::before, *::after': {
-    boxSizing: 'border-box',
+    DivSizing: 'border-Div',
   },
   html: {
     scrollBehavior: 'smooth',
@@ -20,7 +22,7 @@ const globalStyles = globalCss({
     color: '$hiContrast',
     backgroundColor: '$appBg1',
     fontFamily: '$untitled',
-    lineHeight: '1.5',
+    lineHeight: '1',
     WebkitTextSizeAdjust: '100%',
   },
 
@@ -33,10 +35,12 @@ const App = () => {
     <Flex
       direction='column'
       wrap='wrap'
-      css={{ minHeight: '$vh', bg: '$base12', color: '$primary1' }}
+      css={{
+        minHeight: '$vh',
+      }}
     >
-      {/* <SingleColumn /> */}
-      <TwoColumn />
+      <Welcome />
+      <SingleColumn />
     </Flex>
   );
 };

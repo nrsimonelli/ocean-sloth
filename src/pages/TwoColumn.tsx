@@ -1,8 +1,6 @@
 import React from 'react';
-import { Box } from '../components/Box';
-import { Container } from '../components/Container';
 import { Flex } from '../components/Flex';
-import { Text, HeadingText } from '../components/Text';
+import { Text } from '../components/Text';
 import { NAV_HEIGHT } from '../constants';
 
 const TwoColumn = () => {
@@ -24,7 +22,7 @@ const TwoColumn = () => {
       <Flex
         direction='row'
         css={{
-          boxShadow: 'inset 0px 0px 0px 2px $colors$error',
+          DivShadow: 'inset 0px 0px 0px 2px $colors$error',
           minHeight: `calc(100vh - ${NAV_HEIGHT})`,
         }}
       >
