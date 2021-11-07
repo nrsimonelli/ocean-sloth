@@ -32,14 +32,29 @@ export const Button = styled('button', {
       2: { borderRadius: '$2' },
       3: { borderRadius: '$3' },
       4: { borderRadius: '$4' },
-      5: { borderRadius: '$round' },
-      6: { borderRadius: '$pill' },
-      7: { borderRadius: 0 },
+      round: { borderRadius: '$round' },
+      pill: { borderRadius: '$pill' },
+      none: { borderRadius: 0 },
     },
     size: {},
-    type: {},
+    type: {
+      ghost: {
+        backgroundColor: 'transparent',
+        boxShadow: 'inset 0 0 0 1px $colors$white',
+        '&:hover': {
+          backgroundColor: '$white',
+          color: '$primary11',
+        },
+        '&:focus': {
+          boxShadow:
+            'inset 0 0 0 1px $colors$white, 0 0 0 1px $colors$white',
+        },
+      },
+    },
     color: {},
   },
   // compoundVariants: [{}],
-  defaultVariants: {},
+  defaultVariants: {
+    type: 'ghost',
+  },
 });

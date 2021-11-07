@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container } from '../components/Container';
 import { Flex } from '../components/Flex';
-import { Text, HeadingText } from '../components/Text';
+import { Text, TextHeading } from '../components/Text';
 import { NAV_HEIGHT } from '../constants';
 
 const SingleColumn = () => {
@@ -18,7 +18,7 @@ const SingleColumn = () => {
         border
         css={{ flexGrow: 1, padding: '$2' }}
       >
-        <HeadingText size='8'>Heading</HeadingText>
+        <TextHeading size='8'>Heading</TextHeading>
         <Text>Ocean sloth</Text>
         <Text>
           A paragraph of default text to showcase the way it will
