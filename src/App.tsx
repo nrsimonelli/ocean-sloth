@@ -30,7 +30,6 @@ const App = () => {
   return (
     <Flex
       direction='column'
-      wrap='wrap'
       css={{
         minHeight: '$vh',
       }}

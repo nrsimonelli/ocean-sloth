@@ -2,7 +2,7 @@ import React from 'react';
 import { Div } from '../components/Div';
 import { Container } from '../components/Container';
 import { Flex } from '../components/Flex';
-import { Text, TextTitle } from '../components/Text';
+import { Text, TitleText } from '../components/Text';
 import { GRADIENT_STRING, NAV_HEIGHT } from '../constants';
 import { Button } from '../components/Button';
 
@@ -18,7 +18,10 @@ const Welcome = () => {
         backgroundImage: GRADIENT_STRING,
       }}
     >
-      <Container type='3' border css={{ height: NAV_HEIGHT }}>
+      <Container
+        type='3'
+        css={{ height: NAV_HEIGHT, position: 'absolute', top: 0 }}
+      >
         <Flex
           direction='row'
           justify='between'
@@ -41,7 +44,7 @@ const Welcome = () => {
               ></path>
             </svg>
           </Div>
-          <Flex border css={{}}>
+          <Flex css={{}}>
             <Div css={{ minWidth: '$14', textAlign: 'center' }}>
               <Text size='3' case='uppercase'>
                 link1
@@ -60,13 +63,13 @@ const Welcome = () => {
           </Flex>
         </Flex>
       </Container>
-      <Container type='3' border>
+      <Container type='3'>
         <Flex
           direction='column'
           justify='center'
-          css={{ height: `calc(100vh - ${NAV_HEIGHT})`, p: '$4' }}
+          css={{ height: '$vh', p: '$4' }}
         >
-          <TextTitle css={{ mb: '$1' }}>hello</TextTitle>
+          <TitleText css={{ mb: '$1' }}>hello friend</TitleText>
           <Text size='4'>
             A sub description for this component to add some texture
             to the page

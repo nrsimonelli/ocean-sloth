@@ -142,7 +142,7 @@ export const Text = styled('span', {
   },
 });
 
-export const TextHeading = styled(Text, {
+export const HeadingText = styled(Text, {
   defaultVariants: {
     weight: '2',
     size: '4',
@@ -150,7 +150,7 @@ export const TextHeading = styled(Text, {
   },
 });
 
-export const TextTitle = styled(Text, {
+export const TitleText = styled(Text, {
   defaultVariants: {
     weight: '3',
     size: '8',
