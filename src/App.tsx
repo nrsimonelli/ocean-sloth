@@ -1,8 +1,7 @@
 import React from 'react';
 import { Flex } from './components/Flex';
-import SingleColumn from './pages/SingleColumn';
-import TwoColumn from './pages/TwoColumn';
-import Welcome from './pages/Welcome';
+import About from './pages/Welcome/About';
+import Welcome from './pages/Welcome/Welcome';
 import { globalCss } from './stitches.config';
 
 const globalStyles = globalCss({
@@ -36,8 +35,7 @@ const App = () => {
       }}
     >
       <Welcome />
-      <SingleColumn />
-      <TwoColumn />
+      <About />
     </Flex>
   );
 };
