@@ -1,7 +1,6 @@
 import React from 'react';
-import { Div } from '../components/Div';
 import { Flex } from '../components/Flex';
-import { HeadingText, Text, TitleText } from '../components/Text';
+import { HeadingText, TitleText } from '../components/Text';
 import { NAV_HEIGHT } from '../constants';
 
 const TwoColumn = () => {
