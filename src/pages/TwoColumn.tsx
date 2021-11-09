@@ -1,55 +1,90 @@
 import React from 'react';
+import { Div } from '../components/Div';
 import { Flex } from '../components/Flex';
-import { Text } from '../components/Text';
+import { HeadingText, Text, TitleText } from '../components/Text';
 import { NAV_HEIGHT } from '../constants';
 
 const TwoColumn = () => {
   return (
-    <>
+    <Flex
+      direction='row'
+      align='start'
+      wrap={{ '@initial': 'wrap', '@bp2': 'noWrap' }}
+    >
       <Flex
-        align='center'
-        direction='row'
+        direction={{ '@initial': 'row', '@bp2': 'column' }}
+        align={{ '@initial': 'center', '@bp2': 'start' }}
         border
-        css={{ height: NAV_HEIGHT, px: '$2' }}
-      >
-        <Text
-          size='7'
-          css={{ display: 'inherit', '@bp2': { display: 'none' } }}
-        >
-          MENU
-        </Text>
-      </Flex>
-      <Flex
-        direction='row'
         css={{
-          DivShadow: 'inset 0px 0px 0px 2px $colors$error',
-          minHeight: `calc(100vh - ${NAV_HEIGHT})`,
+          width: '$full',
+          // height: NAV_HEIGHT,
+          bg: '$accent9',
+
+          '@bp2': {
+            flexBasis: 250,
+            minHeight: '$vh',
+          },
         }}
       >
         <Flex
-          direction='column'
-          align='center'
           border
+          align='center'
+          justify='between'
           css={{
-            display: 'none',
-            flexGrow: '1',
-            flexBasis: '$15',
-            '@bp2': {
-              display: 'flex',
-            },
+            width: '$full',
+            px: '$3',
+            height: NAV_HEIGHT,
           }}
         >
-          <Text size='7' css={{ py: '$2' }}>
-            MENU
-          </Text>
+          <HeadingText>Nav Icon</HeadingText>
+          <HeadingText>Dropdown</HeadingText>
         </Flex>
         <Flex
           direction='column'
-          border
-          css={{ width: '$15', flexGrow: '8' }}
-        ></Flex>
+          css={{
+            display: 'none',
+            '@bp2': { display: 'flex', width: '$full' },
+            [`& ${Flex}`]: {
+              px: '$3',
+              py: '$1',
+              width: '$full',
+              '&:hover': {
+                bg: '$blackA11',
+              },
+            },
+          }}
+        >
+          <Flex>link</Flex>
+          <Flex>link</Flex>
+          <Flex>link</Flex>
+          <Flex>link</Flex>
+          <Flex>link</Flex>
+          <Flex>link</Flex>
+          <Flex>link</Flex>
+          <Flex>link</Flex>
+        </Flex>
       </Flex>
-    </>
+
+      <Flex
+        direction='column'
+        justify='start'
+        align='start'
+        border
+        css={{
+          bg: '$base9',
+          // width: '$full',
+          minHeight: '$vh',
+          px: '$3',
+          flexGrow: '1',
+          py: '$3',
+          '@bp2': {
+            pt: '$10',
+          },
+        }}
+      >
+        <TitleText>Body</TitleText>
+      </Flex>
+    </Flex>
   );
 };
 

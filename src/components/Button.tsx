@@ -49,10 +49,11 @@ export const Button = styled('button', {
           boxShadow:
             'inset 0 0 0 1px $colors$white, 0 0 0 1px $colors$white',
         },
-        '&:active': {
-          backgroundColor: '$whiteA11',
-          boxShadow: 'inset 0 0 0 1px $colors$whiteA11',
-        },
+        // Not sure i like this just yet...
+        // '&:active': {
+        //   backgroundColor: '$whiteA11',
+        //   boxShadow: 'inset 0 0 0 1px $colors$whiteA11',
+        // },
         transition: 'all 300ms ease',
       },
     },
