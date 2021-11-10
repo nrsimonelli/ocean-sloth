@@ -5,6 +5,8 @@ import Lost from './pages/Lost/Lost';
 import Nav from './pages/Nav/Nav';
 import Home from './pages/Home/Home';
 import { globalCss } from './stitches.config';
+import Leader from './pages/Leader/Leader';
+import Event from './pages/Event/Event';
 
 const globalStyles = globalCss({
   '*, *::before, *::after': {
@@ -23,6 +25,10 @@ const globalStyles = globalCss({
     lineHeight: '1',
     WebkitTextSizeAdjust: '100%',
   },
+  a: {
+    color: 'inherit',
+    textDecoration: 'inherit',
+  },
 
   'h1, h2, h3, h4, h5': { fontWeight: 500 },
 });
@@ -39,12 +45,10 @@ const App = () => {
       <Routes>
         <Route path='/' element={<Nav />}>
           <Route index element={<Home />} />
-          <Route path='leaderboards' element={<Nav />} />
-          <Route path='tournaments' element={<Nav />} />
+          <Route path='/leaderboards' element={<Leader />} />
+          <Route path='/tournaments' element={<Event />} />
           <Route path='*' element={<Lost />} />
         </Route>
-
-        {/* <About /> */}
       </Routes>
     </Flex>
   );

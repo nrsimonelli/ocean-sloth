@@ -5,6 +5,7 @@ import { Text } from '../../components/Text';
 import { GRADIENT_STRING, NAV_HEIGHT } from '../../constants';
 import { Div } from '../../components/Div';
 import { Outlet } from 'react-router';
+import { Link } from 'react-router-dom';
 
 const Nav = () => {
   return (
@@ -50,17 +51,17 @@ const Nav = () => {
           <Flex css={{}}>
             <Div css={{ minWidth: '$14', textAlign: 'center' }}>
               <Text size='3' case='uppercase'>
-                link1
+                <Link to='/'>home</Link>
               </Text>
             </Div>
             <Div css={{ minWidth: '$14', textAlign: 'center' }}>
               <Text size='3' case='uppercase'>
-                link2
+                <Link to='/leaderboards'>rankings</Link>
               </Text>
             </Div>
             <Div css={{ minWidth: '$14', textAlign: 'center' }}>
               <Text size='3' case='uppercase'>
-                link3
+                <Link to='/tournaments'>events</Link>
               </Text>
             </Div>
           </Flex>
