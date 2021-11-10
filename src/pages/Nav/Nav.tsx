@@ -13,7 +13,7 @@ const Nav = () => {
       align='center'
       css={{
         minHeight: '$vh',
-        color: '$base1',
+        color: '$primary1',
         backgroundImage: GRADIENT_STRING,
       }}
     >

@@ -2,9 +2,7 @@ import React from 'react';
 import { Container } from '../../components/Container';
 import { Flex } from '../../components/Flex';
 import { Text, TitleText } from '../../components/Text';
-import { GRADIENT_STRING } from '../../constants';
 import { Button } from '../../components/Button';
-import Nav from '../Nav/Nav';
 import Copy from './Copy';
 
 const Home = () => {

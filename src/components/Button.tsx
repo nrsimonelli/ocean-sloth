@@ -40,14 +40,14 @@ export const Button = styled('button', {
     type: {
       ghost: {
         backgroundColor: 'transparent',
-        boxShadow: 'inset 0 0 0 1px $colors$white',
+        boxShadow: 'inset 0 0 0 1px $colors$primary1',
         '&:hover': {
-          backgroundColor: '$white',
+          backgroundColor: '$primary1',
           color: '$primary11',
         },
         '&:focus': {
           boxShadow:
-            'inset 0 0 0 1px $colors$white, 0 0 0 1px $colors$white',
+            'inset 0 0 0 1px $colors$primary1, 0 0 0 1px $colors$primary1',
         },
         // Not sure i like this just yet...
         // '&:active': {
