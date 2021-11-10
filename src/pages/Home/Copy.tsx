@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container } from '../../components/Container';
 import { Flex } from '../../components/Flex';
-import { TitleText } from '../../components/Text';
+import { Text, TitleText } from '../../components/Text';
 
 const Copy = () => {
   return (
@@ -18,8 +18,9 @@ const Copy = () => {
           '0 2px 10px 0 rgba(0,0,0,.03), 0 2px 20px 10px rgba(0,0,0,.02)',
       }}
     >
-      <Flex pad='3'>
+      <Flex direction='column' pad='3'>
         <TitleText>about</TitleText>
+        <Text>what is this page about?</Text>
       </Flex>
     </Container>
   );

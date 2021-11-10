@@ -9,7 +9,7 @@ const Event = () => {
       <Flex
         direction='column'
         justify='center'
-        css={{ height: '$vh', p: '$4' }}
+        css={{ height: '$vh', p: '$3' }}
       >
         <TitleText css={{ mb: '$1' }}>Event List Page</TitleText>
         <Text size='4'>
