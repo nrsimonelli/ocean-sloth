@@ -4,21 +4,12 @@ import { Flex } from '../../components/Flex';
 import { Text, TitleText } from '../../components/Text';
 import { GRADIENT_STRING } from '../../constants';
 import { Button } from '../../components/Button';
-import Nav from '../Nav';
+import Nav from '../Nav/Nav';
+import Copy from './Copy';
 
-const Welcome = () => {
+const Home = () => {
   return (
-    <Flex
-      direction='column'
-      align='center'
-      wrap='wrap'
-      css={{
-        minHeight: '$vh',
-        color: '$base1',
-        backgroundImage: GRADIENT_STRING,
-      }}
-    >
-      <Nav />
+    <>
       <Container type='3'>
         <Flex
           direction='column'
@@ -54,8 +45,9 @@ const Welcome = () => {
           </Flex>
         </Flex>
       </Container>
-    </Flex>
+      <Copy />
+    </>
   );
 };
 
-export default Welcome;
+export default Home;

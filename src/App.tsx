@@ -1,7 +1,9 @@
 import React from 'react';
+import { Route, Routes } from 'react-router';
 import { Flex } from './components/Flex';
-import About from './pages/Welcome/About';
-import Welcome from './pages/Welcome/Welcome';
+import Lost from './pages/Lost/Lost';
+import Nav from './pages/Nav/Nav';
+import Home from './pages/Home/Home';
 import { globalCss } from './stitches.config';
 
 const globalStyles = globalCss({
@@ -34,8 +36,16 @@ const App = () => {
         minHeight: '$vh',
       }}
     >
-      <Welcome />
-      <About />
+      <Routes>
+        <Route path='/' element={<Nav />}>
+          <Route index element={<Home />} />
+          <Route path='leaderboards' element={<Nav />} />
+          <Route path='tournaments' element={<Nav />} />
+          <Route path='*' element={<Lost />} />
+        </Route>
+
+        {/* <About /> */}
+      </Routes>
     </Flex>
   );
 };
