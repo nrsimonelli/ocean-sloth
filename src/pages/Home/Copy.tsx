@@ -9,8 +9,8 @@ const Copy = () => {
       screen
       type='3'
       css={{
-        transform: 'translateY(-64px)',
-        bg: '$primary1',
+        transform: 'translateY(-80px)',
+        bg: '$appBg1',
         color: '$hiContrast',
         borderRadius: '$4',
         zIndex: '$1',

@@ -2,11 +2,22 @@ import { styled } from '../stitches.config';
 
 export const Text = styled('span', {
   // Reset
-  lineHeight: '1',
+  lineHeight: 'inherit',
   margin: '0',
   display: 'block',
 
   variants: {
+    line: {
+      1: {
+        lineHeight: '$1',
+      },
+      2: {
+        lineHeight: '$2',
+      },
+      3: {
+        lineHeight: '$3',
+      },
+    },
     weight: {
       1: {
         fontWeight: '$1',
@@ -54,6 +65,11 @@ export const Text = styled('span', {
         letterSpacing: '-.055em',
         textIndent: '-.025em',
       },
+      10: {
+        fontSize: '120px',
+        letterSpacing: '-.06em',
+        textIndent: '-.025em',
+      },
     },
     color: {
       primary: {
@@ -64,6 +80,18 @@ export const Text = styled('span', {
       },
       accent: {
         color: '$accent11',
+      },
+      warning: {
+        color: '$warning3',
+      },
+      success: {
+        color: '$success3',
+      },
+      info: {
+        color: '$info3',
+      },
+      error: {
+        color: '$error3',
       },
       base: {
         color: '$loContrast',
@@ -91,6 +119,11 @@ export const Text = styled('span', {
     },
     responsive: {
       true: {},
+    },
+    mb2: {
+      true: {
+        mb: '$2',
+      },
     },
   },
   compoundVariants: [
@@ -134,9 +167,33 @@ export const Text = styled('span', {
         },
       },
     },
+    {
+      responsive: true,
+      size: '9',
+      css: {
+        fontSize: '$9',
+        '@bp2': {
+          fontSize: '84px',
+        },
+      },
+    },
+    {
+      responsive: true,
+      size: '10',
+      css: {
+        fontSize: '21vw',
+        '@bp2': {
+          fontSize: '120px',
+        },
+        '@bp3': {
+          fontSize: '160px',
+        },
+      },
+    },
   ],
 
   defaultVariants: {
+    line: '3',
     size: '3',
     weight: '1',
   },
@@ -144,16 +201,35 @@ export const Text = styled('span', {
 
 export const HeadingText = styled(Text, {
   defaultVariants: {
+    line: '3',
     weight: '2',
     size: '4',
-    responsive: true,
+    color: 'contrast',
+  },
+});
+
+export const SubText = styled(Text, {
+  defaultVariants: {
+    line: '3',
+    weight: '1',
+    size: '5',
+    color: 'base',
   },
 });
 
 export const TitleText = styled(Text, {
   defaultVariants: {
+    line: '1',
     weight: '3',
     size: '8',
+  },
+});
+
+export const HeroText = styled(Text, {
+  defaultVariants: {
+    line: '1',
+    weight: '3',
+    size: '10',
     responsive: true,
   },
 });

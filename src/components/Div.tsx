@@ -7,7 +7,7 @@ export const Div = styled('div', {
   variants: {
     border: {
       true: {
-        boxShadow: 'inset 0 0 0 2px $colors$error',
+        boxShadow: 'inset 0 0 0 2px $colors$error3',
       },
     },
   },

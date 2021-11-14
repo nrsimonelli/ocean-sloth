@@ -1,8 +1,14 @@
 import React from 'react';
-import { Flex } from '../components/Flex';
-import { HeadingText, TitleText } from '../components/Text';
+import { Div } from '../../components/Div';
+import { Flex } from '../../components/Flex';
+import {
+  HeadingText,
+  TitleText,
+  SubText,
+} from '../../components/Text';
+import Content from '../Content/Content';
 
-const TwoColumn = () => {
+const Blog = () => {
   return (
     <Flex
       direction='row'
@@ -15,6 +21,7 @@ const TwoColumn = () => {
         border
         css={{
           width: '$full',
+
           bg: '$accent9',
 
           '@bp2': {
@@ -78,9 +85,11 @@ const TwoColumn = () => {
         }}
       >
         <TitleText>Body</TitleText>
+        <SubText>A collection of lorem ipsum</SubText>
+        <Content />
       </Flex>
     </Flex>
   );
 };
 
-export default TwoColumn;
+export default Blog;

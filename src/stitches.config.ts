@@ -48,9 +48,21 @@ export const { styled, config, theme, globalCss, css } =
         shadow2: '$blackA2',
         shadow3: '$blackA3',
 
-        error: '$crimson9',
-        success: '$mint9',
-        warning: '$yellow9',
+        error1: '$crimson2',
+        error2: '$crimson9',
+        error3: '$crimson11',
+
+        success1: '$mint2',
+        success2: '$mint9',
+        success3: '$mint11',
+
+        warning1: '$yellow2',
+        warning2: '$yellow9',
+        warning3: '$yellow11',
+
+        info1: '$blue2',
+        info2: '$blue9',
+        info3: '$blue11',
 
         loContrast: '$base11',
         hiContrast: '$base12',
@@ -162,6 +174,7 @@ export const { styled, config, theme, globalCss, css } =
         full: '100%',
         vh: '100vh',
         vw: '100vw',
+        nav: '80px',
         bp1: SCREENS[1],
         bp2: SCREENS[2],
         bp3: SCREENS[3],
@@ -173,18 +186,17 @@ export const { styled, config, theme, globalCss, css } =
         2: '6px',
         3: '8px',
         4: '12px',
-        round: '50%',
         pill: '9999px',
       },
       fontWeights: {
         1: 400,
         2: 500,
-        3: 700,
+        3: 600,
       },
       lineHeights: {
-        1: '1.5',
+        1: '1',
         2: '1.25',
-        3: '1',
+        3: '1.5',
       },
       borderWidths: {},
       borderStyles: {},
@@ -206,6 +218,31 @@ export const { styled, config, theme, globalCss, css } =
       bp5: `(min-width: ${SCREENS[5]})`,
     },
     utils: {
+      mainGradient: (
+        value: Stitches.PropertyValue<'backgroundImage'>
+      ) => ({
+        backgroundImage: `linear-gradient(${value}, 
+          hsl(205.88, 100%, 50%) 0%, 
+          hsl(206.05, 99.66%, 50.06%) 8.1%,
+          hsl(206.52, 98.7%, 50.25%) 15.5%,
+          hsl(207.27, 97.2%, 50.53%) 22.5%,
+          hsl(208.29, 95.24%, 50.89%) 29%,
+          hsl(209.56, 92.9%, 51.32%) 35.3%,
+          hsl(211.07, 90.26%, 51.79%) 41.2%,
+          hsl(212.81, 87.42%, 52.29%) 47.1%,
+          hsl(214.74, 84.46%, 52.8%) 52.9%,
+          hsl(216.81, 81.5%, 53.3%) 58.8%,
+          hsl(218.96, 78.63%, 53.78%) 64.7%,
+          hsl(221.09, 75.99%, 54.2%) 71%,
+          hsl(223.05, 73.7%, 54.57%) 77.5%,
+          hsl(224.69, 71.9%, 54.85%) 84.5%,
+          hsl(225.8, 70.73%, 55.03%) 91.9%, hsl(226.21, 70.31%, 55.1%) 100%)`,
+      }),
+      customGradient: (
+        value: Stitches.PropertyValue<'backgroundImage'>
+      ) => ({
+        backgroundImage: `linear-gradient(${value})`,
+      }),
       bg: (value: Stitches.PropertyValue<'backgroundColor'>) => ({
         backgroundColor: value,
       }),
@@ -254,6 +291,10 @@ export const { styled, config, theme, globalCss, css } =
       my: (value: Stitches.PropertyValue<'marginTop'>) => ({
         marginTop: value,
         marginBottom: value,
+      }),
+      square: (value: Stitches.PropertyValue<'height'>) => ({
+        height: value,
+        width: value,
       }),
     },
   });
