@@ -2,7 +2,7 @@ import React from 'react';
 import { Button } from '../../components/Button';
 import { Container } from '../../components/Container';
 import { Flex } from '../../components/Flex';
-import { Text, TitleText } from '../../components/Text';
+import { HeroText, Text, TitleText } from '../../components/Text';
 
 const Hero = () => {
   return (
@@ -21,7 +21,7 @@ const Hero = () => {
           justify='center'
           css={{ height: '$vh', p: '$3' }}
         >
-          <TitleText size='10' css={{ mb: '$1' }}>
+          <TitleText size='9' responsive css={{ mb: '$1' }}>
             hello friend
           </TitleText>
           <Text size='4'>

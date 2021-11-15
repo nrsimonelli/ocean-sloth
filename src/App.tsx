@@ -9,6 +9,7 @@ import Leader from './pages/Leader/Leader';
 import Event from './pages/Event/Event';
 import Hero from './pages/Home/Hero';
 import Blog from './pages/Blog/Blog';
+import Content from './pages/Content/Content';
 
 const globalStyles = globalCss({
   '*, *::before, *::after': {
@@ -55,7 +56,9 @@ const App = () => {
           <Route path='tournaments' element={<Event />} />
           <Route path='*' element={<Lost />} />
         </Route>
-        <Route path='blog' element={<Blog />} />
+        <Route path='blog' element={<Blog />}>
+          <Route index element={<Content />} />
+        </Route>
       </Routes>
     </Flex>
   );

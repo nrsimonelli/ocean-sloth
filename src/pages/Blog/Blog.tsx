@@ -1,4 +1,5 @@
 import React from 'react';
+import { Outlet } from 'react-router';
 import { Div } from '../../components/Div';
 import { Flex } from '../../components/Flex';
 import {
@@ -86,7 +87,7 @@ const Blog = () => {
       >
         <TitleText>Body</TitleText>
         <SubText>A collection of lorem ipsum</SubText>
-        <Content />
+        <Outlet />
       </Flex>
     </Flex>
   );
