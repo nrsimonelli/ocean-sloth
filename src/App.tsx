@@ -2,14 +2,13 @@ import React from 'react';
 import { Route, Routes } from 'react-router';
 import { Flex } from './components/Flex';
 import Lost from './pages/Lost/Lost';
-import Nav from './pages/Home/Nav';
 import Home from './pages/Home/Home';
 import { globalCss } from './stitches.config';
 import Leader from './pages/Leader/Leader';
 import Event from './pages/Event/Event';
 import Hero from './pages/Home/Hero';
-import Blog from './pages/Blog/Blog';
-import Content from './pages/Content/Content';
+import ContentLayout from './pages/Content/ContentLayout';
+import Overview from './pages/Content/Overview';
 
 const globalStyles = globalCss({
   '*, *::before, *::after': {
@@ -44,20 +43,14 @@ const App = () => {
       }}
     >
       <Routes>
-        {/* 
-          <Route path='/' element={<Home />}>
-
-
-        */}
-
         <Route path='/' element={<Home />}>
           <Route index element={<Hero />} />
           <Route path='leaderboards' element={<Leader />} />
           <Route path='tournaments' element={<Event />} />
           <Route path='*' element={<Lost />} />
         </Route>
-        <Route path='blog' element={<Blog />}>
-          <Route index element={<Content />} />
+        <Route path='guide' element={<ContentLayout />}>
+          <Route index element={<Overview />} />
         </Route>
       </Routes>
     </Flex>

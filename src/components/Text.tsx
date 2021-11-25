@@ -204,7 +204,6 @@ export const HeadingText = styled(Text, {
     line: '3',
     weight: '2',
     size: '4',
-    color: 'contrast',
   },
 });
 
@@ -213,7 +212,6 @@ export const SubText = styled(Text, {
     line: '3',
     weight: '1',
     size: '5',
-    color: 'base',
   },
 });
 
