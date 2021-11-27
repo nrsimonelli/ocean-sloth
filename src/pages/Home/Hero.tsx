@@ -1,8 +1,10 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Button } from '../../components/Button';
 import { Container } from '../../components/Container';
 import { Flex } from '../../components/Flex';
 import { HeroText, Text, TitleText } from '../../components/Text';
+import About from './About';
 
 const Hero = () => {
   return (
@@ -40,18 +42,20 @@ const Hero = () => {
               },
             }}
           >
-            <Button shape='pill'>
-              <Text>Official Rankings</Text>
+            <Button as='a' shape='pill' href='#about'>
+              <Text>Learn More</Text>
             </Button>
-            <Button shape='pill'>
+
+            <Button as='a' shape='pill' href='#'>
               <Text>Events Table</Text>
             </Button>
-            <Button shape='pill'>
+            <Button as='a' shape='pill' href='#'>
               <Text>Player History</Text>
             </Button>
           </Flex>
         </Flex>
       </Container>
+      <About />
     </Flex>
   );
 };
