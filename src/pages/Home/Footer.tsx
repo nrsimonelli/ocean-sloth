@@ -7,7 +7,7 @@ const Footer = () => {
       direction='column'
       align='center'
       css={{
-        minHeight: '$vh',
+        minHeight: '$15',
         color: '$primary1',
         mainGradient: 'to bottom left',
       }}

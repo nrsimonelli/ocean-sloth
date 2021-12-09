@@ -19,8 +19,10 @@ const About = () => {
       }}
     >
       <Flex direction='column' pad='3'>
-        <TitleText>About</TitleText>
-        <Text id='about'>what is this page about?</Text>
+        <TitleText id='about'>About</TitleText>
+        <Text>what is this page about?</Text>
+        <TitleText id='event'>Event Types</TitleText>
+        <Text>here are the different event types</Text>
       </Flex>
     </Container>
   );
