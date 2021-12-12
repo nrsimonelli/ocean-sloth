@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container } from '../../components/Container';
 import { Flex } from '../../components/Flex';
-import { Text, TitleText } from '../../components/Text';
+import { Typography, TypoTitle } from '../../components/Typography';
 
 const Copy = () => {
   return (
@@ -19,8 +19,8 @@ const Copy = () => {
       }}
     >
       <Flex direction='column' pad='3'>
-        <TitleText>about</TitleText>
-        <Text>what is this page about?</Text>
+        <TypoTitle>about</TypoTitle>
+        <Typography>what is this page about?</Typography>
       </Flex>
     </Container>
   );

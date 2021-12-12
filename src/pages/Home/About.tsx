@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container } from '../../components/Container';
 import { Flex } from '../../components/Flex';
-import { Text, TitleText } from '../../components/Text';
+import { Typography, TypoTitle } from '../../components/Typography';
 
 const About = () => {
   return (
@@ -19,10 +19,10 @@ const About = () => {
       }}
     >
       <Flex direction='column' pad='3'>
-        <TitleText id='about'>About</TitleText>
-        <Text>what is this page about?</Text>
-        <TitleText id='event'>Event Types</TitleText>
-        <Text>here are the different event types</Text>
+        <TypoTitle id='about'>About</TypoTitle>
+        <Typography>what is this page about?</Typography>
+        <TypoTitle id='event'>Event Types</TypoTitle>
+        <Typography>here are the different event types</Typography>
       </Flex>
     </Container>
   );

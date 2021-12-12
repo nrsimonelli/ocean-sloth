@@ -1,6 +1,6 @@
 import { styled } from '../stitches.config';
 
-export const Text = styled('span', {
+export const Typography = styled('span', {
   // Reset
   lineHeight: 'inherit',
   margin: '0',
@@ -199,7 +199,7 @@ export const Text = styled('span', {
   },
 });
 
-export const HeadingText = styled(Text, {
+export const TypoHeading = styled(Typography, {
   defaultVariants: {
     line: '3',
     weight: '2',
@@ -207,7 +207,7 @@ export const HeadingText = styled(Text, {
   },
 });
 
-export const SubText = styled(Text, {
+export const TypoSub = styled(Typography, {
   defaultVariants: {
     line: '3',
     weight: '1',
@@ -215,7 +215,7 @@ export const SubText = styled(Text, {
   },
 });
 
-export const TitleText = styled(Text, {
+export const TypoTitle = styled(Typography, {
   defaultVariants: {
     line: '1',
     weight: '3',
@@ -223,7 +223,7 @@ export const TitleText = styled(Text, {
   },
 });
 
-export const HeroText = styled(Text, {
+export const TypoHero = styled(Typography, {
   defaultVariants: {
     line: '1',
     weight: '3',

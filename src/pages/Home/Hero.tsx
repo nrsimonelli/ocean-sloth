@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { Button } from '../../components/Button';
 import { Container } from '../../components/Container';
 import { Flex } from '../../components/Flex';
-import { HeroText, Text, TitleText } from '../../components/Text';
+import { Typography, TypoTitle } from '../../components/Typography';
 import About from './About';
 
 const Hero = () => {
@@ -24,13 +24,13 @@ const Hero = () => {
             justify='center'
             css={{ height: '$vh', p: '$3' }}
           >
-            <TitleText size='9' responsive css={{ mb: '$1' }}>
+            <TypoTitle size='9' responsive css={{ mb: '$1' }}>
               hello friend
-            </TitleText>
-            <Text size='4'>
+            </TypoTitle>
+            <Typography size='4'>
               A sub description for this component to add some texture
               to the page
-            </Text>
+            </Typography>
             <Flex
               wrap='wrap'
               css={{
@@ -44,15 +44,15 @@ const Hero = () => {
               }}
             >
               <Button as='a' shape='pill' href='#about'>
-                <Text>Learn More</Text>
+                <Typography>Learn More</Typography>
               </Button>
 
               <Button as='a' shape='pill' href='#event'>
-                <Text>Event Types</Text>
+                <Typography>Event Types</Typography>
               </Button>
               <Link to='leaderboards'>
                 <Button shape='pill'>
-                  <Text>Official Rankings</Text>
+                  <Typography>Official Rankings</Typography>
                 </Button>
               </Link>
             </Flex>

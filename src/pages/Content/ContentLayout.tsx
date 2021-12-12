@@ -6,7 +6,7 @@ import { Container } from '../../components/Container';
 import { Div } from '../../components/Div';
 import { Flex } from '../../components/Flex';
 import { ScrollArea } from '../../components/ScrollArea';
-import { HeadingText, Text } from '../../components/Text';
+import { TypoHeading, Typography } from '../../components/Typography';
 
 const ContentLayout = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -64,19 +64,19 @@ const ContentLayout = () => {
             }}
           >
             <Div>
-              <Text size='2' case='uppercase'>
+              <Typography size='2' case='uppercase'>
                 <Link to='/'>home</Link>
-              </Text>
+              </Typography>
             </Div>
             <Div>
-              <Text size='2' case='uppercase'>
+              <Typography size='2' case='uppercase'>
                 <Link to='leaderboards'>rankings</Link>
-              </Text>
+              </Typography>
             </Div>
             <Div>
-              <Text size='2' case='uppercase'>
+              <Typography size='2' case='uppercase'>
                 <Link to='tournaments'>events</Link>
-              </Text>
+              </Typography>
             </Div>
 
             <Button
@@ -117,86 +117,86 @@ const ContentLayout = () => {
             }}
           >
             <Div css={{ p: '$3' }}>
-              <HeadingText>Overview</HeadingText>
-              <Text>description</Text>
-              <Text mb2>
+              <TypoHeading>Overview</TypoHeading>
+              <Typography>description</Typography>
+              <Typography mb2>
                 Lorem ipsum dolor sit amet, consectetur adipiscing
                 elit, sed do eiusmod tempor incididunt ut labore et
                 dolore magna aliqua.
-              </Text>
-              <Text mb2>
+              </Typography>
+              <Typography mb2>
                 Scelerisque in dictum non consectetur a erat nam at
                 lectus. Non arcu risus quis varius quam quisque.
-              </Text>
-              <Text mb2>
+              </Typography>
+              <Typography mb2>
                 Non tellus orci ac auctor augue mauris augue neque.
                 Nisi vitae suscipit tellus mauris.
-              </Text>
-              <Text mb2>
+              </Typography>
+              <Typography mb2>
                 Enim ut tellus elementum sagittis vitae et leo duis
                 ut.
-              </Text>
-              <Text mb2>
+              </Typography>
+              <Typography mb2>
                 Tellus mauris a diam maecenas sed enim ut sem.
                 Tristique senectus et netus et malesuada fames ac
                 turpis.
-              </Text>
-              <Text mb2>
+              </Typography>
+              <Typography mb2>
                 Est placerat in egestas erat imperdiet sed euismod
                 nisi porta. Maecenas sed enim ut sem.
-              </Text>
-              <Text mb2>
+              </Typography>
+              <Typography mb2>
                 Lorem ipsum dolor sit amet, consectetur adipiscing
                 elit, sed do eiusmod tempor incididunt ut labore et
                 dolore magna aliqua.
-              </Text>
-              <Text mb2>
+              </Typography>
+              <Typography mb2>
                 Scelerisque in dictum non consectetur a erat nam at
                 lectus. Non arcu risus quis varius quam quisque.
-              </Text>
-              <Text mb2>
+              </Typography>
+              <Typography mb2>
                 Non tellus orci ac auctor augue mauris augue neque.
                 Nisi vitae suscipit tellus mauris.
-              </Text>
-              <Text mb2>
+              </Typography>
+              <Typography mb2>
                 Enim ut tellus elementum sagittis vitae et leo duis
                 ut.
-              </Text>
-              <Text mb2>
+              </Typography>
+              <Typography mb2>
                 Tellus mauris a diam maecenas sed enim ut sem.
                 Tristique senectus et netus et malesuada fames ac
                 turpis.
-              </Text>
-              <Text mb2>
+              </Typography>
+              <Typography mb2>
                 Est placerat in egestas erat imperdiet sed euismod
                 nisi porta. Maecenas sed enim ut sem.
-              </Text>
-              <Text mb2>
+              </Typography>
+              <Typography mb2>
                 Lorem ipsum dolor sit amet, consectetur adipiscing
                 elit, sed do eiusmod tempor incididunt ut labore et
                 dolore magna aliqua.
-              </Text>
-              <Text mb2>
+              </Typography>
+              <Typography mb2>
                 Scelerisque in dictum non consectetur a erat nam at
                 lectus. Non arcu risus quis varius quam quisque.
-              </Text>
-              <Text mb2>
+              </Typography>
+              <Typography mb2>
                 Non tellus orci ac auctor augue mauris augue neque.
                 Nisi vitae suscipit tellus mauris.
-              </Text>
-              <Text mb2>
+              </Typography>
+              <Typography mb2>
                 Enim ut tellus elementum sagittis vitae et leo duis
                 ut.
-              </Text>
-              <Text mb2>
+              </Typography>
+              <Typography mb2>
                 Tellus mauris a diam maecenas sed enim ut sem.
                 Tristique senectus et netus et malesuada fames ac
                 turpis.
-              </Text>
-              <Text mb2>
+              </Typography>
+              <Typography mb2>
                 Est placerat in egestas erat imperdiet sed euismod
                 nisi porta. Maecenas sed enim ut sem.
-              </Text>
+              </Typography>
             </Div>
             {/* empty div for spacing here if needed */}
           </Div>
@@ -224,8 +224,8 @@ const ContentLayout = () => {
             height: '$nav',
           }}
         >
-          <HeadingText>Nav Icon</HeadingText>
-          <HeadingText>Dropdown</HeadingText>
+          <TypoHeading>Nav Icon</TypoHeading>
+          <TypoHeading>Dropdown</TypoHeading>
         </Flex>
       </Flex> */}
 

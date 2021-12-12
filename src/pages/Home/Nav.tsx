@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container } from '../../components/Container';
 import { Flex } from '../../components/Flex';
-import { Text } from '../../components/Text';
+import { Typography } from '../../components/Typography';
 import { Div } from '../../components/Div';
 import { Link } from 'react-router-dom';
 
@@ -53,19 +53,19 @@ const Nav = () => {
             }}
           >
             <Div>
-              <Text size='2' case='uppercase'>
+              <Typography size='2' case='uppercase'>
                 <Link to='/'>home</Link>
-              </Text>
+              </Typography>
             </Div>
             <Div>
-              <Text size='2' case='uppercase'>
+              <Typography size='2' case='uppercase'>
                 <Link to='leaderboards'>rankings</Link>
-              </Text>
+              </Typography>
             </Div>
             <Div>
-              <Text size='2' case='uppercase'>
+              <Typography size='2' case='uppercase'>
                 <Link to='tournaments'>events</Link>
-              </Text>
+              </Typography>
             </Div>
           </Flex>
         </Flex>
